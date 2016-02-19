@@ -38,8 +38,10 @@ public class MyCalculator {
 	public int nfactorial(int n){
 		int factorial = 1;
 		
-		for(int i=1;i<n;i++)
-			factorial *= i;
+		while(n != 0){
+			factorial *= n;
+			n--;
+		}
 		
 		return factorial;
 	}
